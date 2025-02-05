@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Play', Arial, sans-serif;
     display: flex;
     background-color: #e6dada81;
     place-content: center;
@@ -53,6 +56,7 @@ body {
 }
 
 button {
+    font-family: 'Play', sans-serif;
     padding: 10px 20px;
     font-size: 18px;
     border-radius: 5px;

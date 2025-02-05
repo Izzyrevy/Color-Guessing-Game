@@ -45,7 +45,7 @@ function checkGuess(selectedColor) {
         }, 1000); 
     } else {
         gameStatus.classList.add('wrong');
-        gameInstructions.textContent = 'Wrong! Try again.';
+        gameInstructions.textContent = "Wrong! Try again.";
         score = 0;
         setTimeout(() => {
             gameStatus.classList.remove('wrong');
