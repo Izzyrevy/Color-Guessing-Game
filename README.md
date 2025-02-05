@@ -1,1 +1,1 @@
-Color-Guessing-Game
+Guess the correct color from the color boxes!!!

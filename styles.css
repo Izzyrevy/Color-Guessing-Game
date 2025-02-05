@@ -25,6 +25,7 @@ body {
 
 .game-container h1{
     color: #fff;
+    display: inline;
 }
 
 .color-box {
@@ -36,8 +37,6 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;
 }
-
-
 
 .color-option {
     width: 60px;
@@ -84,4 +83,16 @@ button {
 @keyframes fadeOut {
     from { opacity: 1; }
     to { opacity: 0; }
+}
+
+#wrong{
+    display: none;
+    color: #ff0000;
+    font-size: 40px;
+}
+
+#right{
+    display: none;
+    color: #fff;
+    font-size: 55px;
 }

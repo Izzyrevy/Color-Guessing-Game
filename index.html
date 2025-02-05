@@ -9,7 +9,13 @@
 </head>
 <body>
     <div class="game-container">
-        <h1 data-testid="gameInstructions">Guess the correct color!</h1>
+        <div>
+            <i class="ri-close-large-line" id="wrong"></i>
+            <i class="ri-check-line" id="right"></i>
+            <h1 data-testid="gameInstructions"> 
+                Guess the correct color!
+            </h1>
+        </div>  
         <div class="color-box" data-testid="colorBox"></div>
         <div class="color-options" id="colorOptions"></div>
         <p data-testid="gameStatus" id="gameStatus"></p>
