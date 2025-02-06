@@ -35,7 +35,7 @@ body {
     border-radius: 8px;
     border: 4px solid #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
 }
 
 .color-option {
@@ -52,6 +52,11 @@ body {
 .color-option:hover {
     border: 2px solid #fff;
     transform: scale(1.1);
+}
+
+.color-option:active{
+    transform: scale(0.95);
+    transition: transform 0.1s;
 }
 
 button {
@@ -72,6 +77,14 @@ button {
 
 .wrong {
     animation: fadeOut 0.5s;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s forwards; 
+}
+
+.fade-out {
+    animation: fadeOut 0.5s forwards;
 }
 
 

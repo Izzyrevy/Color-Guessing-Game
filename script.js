@@ -37,28 +37,38 @@ function generateColorOptions() {
     });
 }
 
+
+
 function checkGuess(selectedColor) {
+    gameInstructions.classList.remove('fade-in', 'fade-out');
+
     if (selectedColor === targetColor) {
         score++;
         gameStatus.classList.add('correct');
         gameInstructions.textContent = 'Correct!';
+        gameInstructions.classList.add('fade-in');
         rightIcon.style.display = 'inline'
 
         setTimeout(() => {
             gameStatus.classList.remove('correct');
+            gameInstructions.classList.remove('fade-in');
             gameInstructions.textContent = '';
+            gameInstructions.classList.add('fade-in')
             rightIcon.style.display = 'none'
             startNewGame();
         }, 1000); 
     } else {
-        gameStatus.classList.add('wrong');
-        gameInstructions.textContent = "Wrong! Try again.";
-        wrongIcon.style.display = 'inline'
-        score = 0;
-        setTimeout(() => {
-            gameStatus.classList.remove('wrong');
-            gameInstructions.textContent = 'Guess the correct color!';
-            wrongIcon.style.display = 'none'
+            gameStatus.classList.add('wrong');
+            gameInstructions.textContent = "Wrong! Try again.";
+            gameInstructions.classList.add('fade-in');
+            wrongIcon.style.display = 'inline'
+            score = 0;
+            setTimeout(() => {
+               gameStatus.classList.remove('wrong');
+               gameInstructions.classList.remove('fade-in');
+               gameInstructions.textContent = 'Guess the correct color!';
+               gameInstructions.classList.add('fade-in')
+               wrongIcon.style.display = 'none'
         }, 1000);
     }
     scoreDisplay.textContent = `Score: ${score}`;
